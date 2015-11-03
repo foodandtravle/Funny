@@ -8,7 +8,7 @@
 
 #import "HomeBaseViewController.h"
 
-@interface HomeBaseViewController ()<UIScrollViewDelegate>
+@interface HomeBaseViewController ()
 
 @end
 
@@ -18,17 +18,25 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    _height=IPHONE5?126:136;
+    
     //初始化导航条
     [self customNavigationController];
     //创建UI
     [self createSubViews];
+    
+    //我的资产
+    [self createImgview];
+    
+    //collectionView
+    [self createCollectionView];
 }
 
-#pragma mark - 创建UI
-- (void)createSubViews
-{
+#pragma mark - 创建UI轮播图
+- (void)createSubViews{
+    
     //创建首页自动轮播的ScrollView
-    self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, maiScr.width, IPHONE5?126:136)];
+    self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, maiScr.width, _height)];
     self.scrollView.contentSize = CGSizeMake(maiScr.width*5, 0);
     self.scrollView.pagingEnabled = YES;
     self.scrollView.delegate = self;
@@ -57,6 +65,51 @@
     
     //初始化轮播时间器
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.5f target:self selector:@selector(nextImageView) userInfo:nil repeats:YES];
+}
+
+-(void)createImgview{
+    
+    UIImageView *imgView=[[UIImageView alloc]initWithFrame:CGRectMake(0, _height, maiScr.width, 115)];
+    
+    imgView.image=[UIImage imageNamed:@"background_homepage_my_invest"];
+    
+    [self.view addSubview:imgView];
+    
+    UILabel *myLable=[[UILabel alloc]initWithFrame:CGRectMake(10, 10, 80, 30)];
+    
+    myLable.text=@"我的资产";
+    
+    myLable.backgroundColor=[UIColor clearColor];
+    
+    [imgView addSubview:myLable];
+    
+    UIImageView *subView=[[UIImageView alloc]initWithFrame:CGRectMake(10, 50, 70, 50)];
+    
+    subView.image=[UIImage imageNamed:@"golden_brisk"];
+    
+    [imgView addSubview:subView];
+}
+
+-(void)createCollectionView{
+    
+    _collectionViewArr=[NSMutableArray arrayWithArray:@[@[@"InvestmentInformation",@"智慧投资"],@[@"bankCardInformation",@"银行转账"],@[@"iconshrx",@"申话日鑫"],@[@"TradeCardInformation1",@"工会卡专区"],@[@"myDebt",@"同心宝"],@[@"IMSG",@"IMSG"]]];
+    
+    
+    UICollectionViewFlowLayout *flowLayout=[[UICollectionViewFlowLayout alloc]init];
+    
+    flowLayout.scrollDirection=UICollectionElementCategoryDecorationView;
+    
+    _myCollectionView=[[UICollectionView alloc]initWithFrame:CGRectMake(0, _height + 115, maiScr.width, 212) collectionViewLayout:flowLayout];
+    
+    _myCollectionView.delegate=self;
+    
+    _myCollectionView.dataSource=self;
+    
+    [self.view addSubview:_myCollectionView];
+    
+    /*注意自定义cell与系统cell的注册方式不一样*/
+    //[_myCollectionView registerClass:[CellOnHome class] forCellWithReuseIdentifier:@"cell"];
+    [_myCollectionView registerNib:[UINib nibWithNibName:@"CellOnHome" bundle:nil] forCellWithReuseIdentifier:@"cell"];
 }
 
 //创建scrollView里的imgView
@@ -110,8 +163,8 @@
 }
 
 #pragma mark - 轮播动画时间器的事件
-- (void)nextImageView
-{
+- (void)nextImageView{
+    
     int page = (int)self->_pageControl.currentPage;
     
     page++;
@@ -136,10 +189,9 @@
 }
 
 #pragma mark - ScrollViewDelegate
-
 // 开始拖拽的时候调用//定时轮播的时候不调用这个方法，只有手指触屏拖拽时才会调用到
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    
     if (scrollView.contentOffset.x == 0){
         //  此处不需要动画效果，因为要进行相同图片的替换
         scrollView.contentOffset = CGPointMake(maiScr.width*3, 0);
@@ -154,6 +206,60 @@
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
     //    开启定时器
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.5 target:self selector:@selector(nextImageView) userInfo:nil repeats:YES];
+}
+
+#pragma mark CpllectionViewDelegate
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    
+    return _collectionViewArr.count;
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString *str=@"cell";
+    
+    CellOnHome *cell=[collectionView   dequeueReusableCellWithReuseIdentifier:str forIndexPath:indexPath];
+    
+    if (!cell) {
+        
+        NSLog(@"创建失败");
+    }
+    
+    [cell sizeToFit];
+    
+    NSArray *arr=_collectionViewArr[indexPath.row];
+    
+    cell.img.image=[UIImage imageNamed:arr[0]];
+    
+    cell.lable.text=arr[1];
+    
+    return cell;
+}
+
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return CGSizeMake((maiScr.width-1)/2, 70);
+}
+
+//定义每个UICollectionView的间距  返回UIEdgeInsets:上,下,左,右
+//-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+//    
+//    return UIEdgeInsetsMake(1, 1, 1, 1);
+//}
+
+-(CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
+    
+    return 1.0;
+}
+
+-(CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
+    
+    return 1.0;
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSLog(@"%ld======%ld",indexPath.section,indexPath.row);
 }
 
 - (void)didReceiveMemoryWarning {

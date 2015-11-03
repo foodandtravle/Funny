@@ -7,8 +7,10 @@
 //
 
 #import "BaseViewController.h"
+#import "CellOnHome.h"
 
-@interface HomeBaseViewController : BaseViewController
+
+@interface HomeBaseViewController : BaseViewController<UIScrollViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
 
 @property (nonatomic,strong) NSMutableArray  *dataArray;//数据模型数组*/
@@ -40,8 +42,19 @@
 @property (nonatomic,assign) NSInteger times;
 
 
+@property(nonatomic,assign)CGFloat height;//轮播图的高度
+
 @property (nonatomic,strong) UIScrollView *scrollView;/**首页自动轮播的滚动视图*/
 @property (nonatomic,strong) UIPageControl * pageControl;//创建翻页控制器
 
 @property (nonatomic,assign) BOOL status;/**当前控机制器的状态*/
+
+@property(nonatomic,strong)NSMutableArray *collectionViewArr;
+
+@property(nonatomic,strong)UICollectionView *myCollectionView;
+
+
+
+
+
 @end
