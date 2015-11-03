@@ -1,0 +1,34 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "d4cbd7ed-0d3e-4cd7-a5cb-bac28e6cba04" : {
+
+    },
+    "d4cbd7ed-0d3e-4cd7-a5cb-bac28e6cba04++505" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "d4cbd7ed-0d3e-4cd7-a5cb-bac28e6cba04" : 0,
+    "d4cbd7ed-0d3e-4cd7-a5cb-bac28e6cba04++505" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CA720E35-6FAB-4AB0-B06F-2132F08B66A5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "d4cbd7ed-0d3e-4cd7-a5cb-bac28e6cba04" : "..",
+    "d4cbd7ed-0d3e-4cd7-a5cb-bac28e6cba04++505" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FinancialCloud",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FinancialCloud.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/505551740%40qq.com@code.taobao.org\/svn\/FinancialECloud",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d4cbd7ed-0d3e-4cd7-a5cb-bac28e6cba04"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/FinancialECloud",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d4cbd7ed-0d3e-4cd7-a5cb-bac28e6cba04++505"
+    }
+  ]
+}

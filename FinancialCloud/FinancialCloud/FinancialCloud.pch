@@ -1,0 +1,28 @@
+//
+//  FinancialCloud.pch
+//  FinancialCloud
+//
+//  Created by SSP_MACMINI-001 on 15/10/27.
+//  Copyright © 2015年 SHR. All rights reserved.
+//
+#import "Tool.h"
+#import "HRTools.h"
+#ifndef FinancialCloud_pch
+#define FinancialCloud_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//判断iPhone型号
+#define IPHONE5  [HRTools iphone5]
+
+//尺寸
+#define  SELF_View_Height   self.view.frame.size.height
+#define  SELF_View_Width   self.view.frame.size.width
+
+#define  SCREEN_Height  [UIScreen mainScreen].bounds.size.height
+#define  SCREEM_Width  [UIScreen mainScreen].bounds.size.width
+
+
+
+#endif /* FinancialCloud_pch */

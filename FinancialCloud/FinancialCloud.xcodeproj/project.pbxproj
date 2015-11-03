@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54F8057A7D7311C238C4F244 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC3D6B2756A26F03738FFD7 /* libPods.a */; };
+		9616333D1BDDDB8C00C4D5E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9616333C1BDDDB8C00C4D5E5 /* main.m */; };
+		961633401BDDDB8C00C4D5E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9616333F1BDDDB8C00C4D5E5 /* AppDelegate.m */; };
+		961633481BDDDB8D00C4D5E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961633471BDDDB8D00C4D5E5 /* Assets.xcassets */; };
+		961633561BDDDB8D00C4D5E5 /* FinancialCloudTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 961633551BDDDB8D00C4D5E5 /* FinancialCloudTests.m */; };
+		961633611BDDDB8D00C4D5E5 /* FinancialCloudUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 961633601BDDDB8D00C4D5E5 /* FinancialCloudUITests.m */; };
+		961633811BDE026C00C4D5E5 /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 961633801BDE026C00C4D5E5 /* AccountManager.m */; };
+		961633891BDE1A1C00C4D5E5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961633881BDE1A1C00C4D5E5 /* BaseViewController.m */; };
+		9616338F1BDE1AAB00C4D5E5 /* HomeBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9616338E1BDE1AAB00C4D5E5 /* HomeBaseViewController.m */; };
+		961633921BDE1ACB00C4D5E5 /* ServerBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961633911BDE1ACB00C4D5E5 /* ServerBaseViewController.m */; };
+		961633981BDE1D7800C4D5E5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961633971BDE1D7800C4D5E5 /* HomeViewController.m */; };
+		9616339B1BDE1DBA00C4D5E5 /* PersonalCenterBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9616339A1BDE1DBA00C4D5E5 /* PersonalCenterBaseViewController.m */; };
+		9616339E1BDE1DEC00C4D5E5 /* PersonalCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9616339D1BDE1DEC00C4D5E5 /* PersonalCenterViewController.m */; };
+		961633A11BDE1E1900C4D5E5 /* ServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961633A01BDE1E1900C4D5E5 /* ServerViewController.m */; };
+		961633A41BDE1E4500C4D5E5 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961633A31BDE1E4500C4D5E5 /* BaseTabBarViewController.m */; };
+		96A2D30A1BDF5172001DBE21 /* HRTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A2D3091BDF5172001DBE21 /* HRTools.m */; };
+		96C137911BDF004F009CC168 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C137901BDF004F009CC168 /* libsqlite3.tbd */; };
+		96C137931BDF00B1009CC168 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C137921BDF00B1009CC168 /* SystemConfiguration.framework */; };
+		96C137961BDF00FF009CC168 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C137941BDF00C5009CC168 /* libz.tbd */; };
+		96C137981BDF0108009CC168 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C137971BDF0108009CC168 /* libsqlite3.0.tbd */; };
+		96C1379A1BDF016E009CC168 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C137991BDF016E009CC168 /* libc++.tbd */; };
+		96E776C41BE343A100161825 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E776C31BE343A100161825 /* LoginViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		961633521BDDDB8D00C4D5E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 961633301BDDDB8C00C4D5E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 961633371BDDDB8C00C4D5E5;
+			remoteInfo = FinancialCloud;
+		};
+		9616335D1BDDDB8D00C4D5E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 961633301BDDDB8C00C4D5E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 961633371BDDDB8C00C4D5E5;
+			remoteInfo = FinancialCloud;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		96134F2F1BDF0E5600AF5909 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		96134F301BDF0F5A00AF5909 /* FinancialCloud.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinancialCloud.pch; sourceTree = "<group>"; };
+		961633381BDDDB8C00C4D5E5 /* FinancialCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9616333C1BDDDB8C00C4D5E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9616333E1BDDDB8C00C4D5E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9616333F1BDDDB8C00C4D5E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		961633471BDDDB8D00C4D5E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9616334C1BDDDB8D00C4D5E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		961633511BDDDB8D00C4D5E5 /* FinancialCloudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinancialCloudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		961633551BDDDB8D00C4D5E5 /* FinancialCloudTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinancialCloudTests.m; sourceTree = "<group>"; };
+		961633571BDDDB8D00C4D5E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9616335C1BDDDB8D00C4D5E5 /* FinancialCloudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinancialCloudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		961633601BDDDB8D00C4D5E5 /* FinancialCloudUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinancialCloudUITests.m; sourceTree = "<group>"; };
+		961633621BDDDB8D00C4D5E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9616337F1BDE026C00C4D5E5 /* AccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManager.h; sourceTree = "<group>"; };
+		961633801BDE026C00C4D5E5 /* AccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManager.m; sourceTree = "<group>"; };
+		961633871BDE1A1C00C4D5E5 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		961633881BDE1A1C00C4D5E5 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		9616338D1BDE1AAB00C4D5E5 /* HomeBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeBaseViewController.h; sourceTree = "<group>"; };
+		9616338E1BDE1AAB00C4D5E5 /* HomeBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeBaseViewController.m; sourceTree = "<group>"; };
+		961633901BDE1ACB00C4D5E5 /* ServerBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerBaseViewController.h; sourceTree = "<group>"; };
+		961633911BDE1ACB00C4D5E5 /* ServerBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerBaseViewController.m; sourceTree = "<group>"; };
+		961633961BDE1D7800C4D5E5 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		961633971BDE1D7800C4D5E5 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		961633991BDE1DBA00C4D5E5 /* PersonalCenterBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCenterBaseViewController.h; sourceTree = "<group>"; };
+		9616339A1BDE1DBA00C4D5E5 /* PersonalCenterBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterBaseViewController.m; sourceTree = "<group>"; };
+		9616339C1BDE1DEC00C4D5E5 /* PersonalCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCenterViewController.h; sourceTree = "<group>"; };
+		9616339D1BDE1DEC00C4D5E5 /* PersonalCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterViewController.m; sourceTree = "<group>"; };
+		9616339F1BDE1E1900C4D5E5 /* ServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerViewController.h; sourceTree = "<group>"; };
+		961633A01BDE1E1900C4D5E5 /* ServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerViewController.m; sourceTree = "<group>"; };
+		961633A21BDE1E4500C4D5E5 /* BaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarViewController.h; sourceTree = "<group>"; };
+		961633A31BDE1E4500C4D5E5 /* BaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarViewController.m; sourceTree = "<group>"; };
+		96A2D3081BDF5172001DBE21 /* HRTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRTools.h; sourceTree = "<group>"; };
+		96A2D3091BDF5172001DBE21 /* HRTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRTools.m; sourceTree = "<group>"; };
+		96C137901BDF004F009CC168 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		96C137921BDF00B1009CC168 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		96C137941BDF00C5009CC168 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		96C137971BDF0108009CC168 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		96C137991BDF016E009CC168 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		96E776C21BE343A100161825 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		96E776C31BE343A100161825 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		AAC3D6B2756A26F03738FFD7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC2C8AD239775C24C292AA53 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CB522FAC07E8B5BB83A7B8C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		961633351BDDDB8C00C4D5E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C1379A1BDF016E009CC168 /* libc++.tbd in Frameworks */,
+				96C137981BDF0108009CC168 /* libsqlite3.0.tbd in Frameworks */,
+				96C137961BDF00FF009CC168 /* libz.tbd in Frameworks */,
+				96C137931BDF00B1009CC168 /* SystemConfiguration.framework in Frameworks */,
+				96C137911BDF004F009CC168 /* libsqlite3.tbd in Frameworks */,
+				54F8057A7D7311C238C4F244 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9616334E1BDDDB8D00C4D5E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961633591BDDDB8D00C4D5E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9616332F1BDDDB8C00C4D5E5 = {
+			isa = PBXGroup;
+			children = (
+				9616336E1BDDF2FE00C4D5E5 /* FinancialECloud */,
+				9616333A1BDDDB8C00C4D5E5 /* FinancialCloud */,
+				961633541BDDDB8D00C4D5E5 /* FinancialCloudTests */,
+				9616335F1BDDDB8D00C4D5E5 /* FinancialCloudUITests */,
+				961633391BDDDB8C00C4D5E5 /* Products */,
+				B779775ED1F23F3C692C9B0D /* Pods */,
+				9D5EBB657ACB308ADC1CCC17 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		961633391BDDDB8C00C4D5E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				961633381BDDDB8C00C4D5E5 /* FinancialCloud.app */,
+				961633511BDDDB8D00C4D5E5 /* FinancialCloudTests.xctest */,
+				9616335C1BDDDB8D00C4D5E5 /* FinancialCloudUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9616333A1BDDDB8C00C4D5E5 /* FinancialCloud */ = {
+			isa = PBXGroup;
+			children = (
+				9616333E1BDDDB8C00C4D5E5 /* AppDelegate.h */,
+				9616333F1BDDDB8C00C4D5E5 /* AppDelegate.m */,
+				961633471BDDDB8D00C4D5E5 /* Assets.xcassets */,
+				9616333B1BDDDB8C00C4D5E5 /* Supporting Files */,
+			);
+			path = FinancialCloud;
+			sourceTree = "<group>";
+		};
+		9616333B1BDDDB8C00C4D5E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9616334C1BDDDB8D00C4D5E5 /* Info.plist */,
+				9616333C1BDDDB8C00C4D5E5 /* main.m */,
+				96134F2F1BDF0E5600AF5909 /* Tool.h */,
+				96134F301BDF0F5A00AF5909 /* FinancialCloud.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		961633541BDDDB8D00C4D5E5 /* FinancialCloudTests */ = {
+			isa = PBXGroup;
+			children = (
+				961633551BDDDB8D00C4D5E5 /* FinancialCloudTests.m */,
+				961633571BDDDB8D00C4D5E5 /* Info.plist */,
+			);
+			path = FinancialCloudTests;
+			sourceTree = "<group>";
+		};
+		9616335F1BDDDB8D00C4D5E5 /* FinancialCloudUITests */ = {
+			isa = PBXGroup;
+			children = (
+				961633601BDDDB8D00C4D5E5 /* FinancialCloudUITests.m */,
+				961633621BDDDB8D00C4D5E5 /* Info.plist */,
+			);
+			path = FinancialCloudUITests;
+			sourceTree = "<group>";
+		};
+		9616336E1BDDF2FE00C4D5E5 /* FinancialECloud */ = {
+			isa = PBXGroup;
+			children = (
+				9616336F1BDDF2FE00C4D5E5 /* lib */,
+				961633711BDDF2FE00C4D5E5 /* OpenSource */,
+				961633721BDDF2FE00C4D5E5 /* CommonTools */,
+				961633701BDDF2FE00C4D5E5 /* Model */,
+				961633741BDDF2FE00C4D5E5 /* Views */,
+				961633731BDDF2FE00C4D5E5 /* ViewControllers */,
+			);
+			path = FinancialECloud;
+			sourceTree = "<group>";
+		};
+		9616336F1BDDF2FE00C4D5E5 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		961633701BDDF2FE00C4D5E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		961633711BDDF2FE00C4D5E5 /* OpenSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OpenSource;
+			sourceTree = "<group>";
+		};
+		961633721BDDF2FE00C4D5E5 /* CommonTools */ = {
+			isa = PBXGroup;
+			children = (
+				9616337F1BDE026C00C4D5E5 /* AccountManager.h */,
+				961633801BDE026C00C4D5E5 /* AccountManager.m */,
+				96A2D3081BDF5172001DBE21 /* HRTools.h */,
+				96A2D3091BDF5172001DBE21 /* HRTools.m */,
+			);
+			name = CommonTools;
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		961633731BDDF2FE00C4D5E5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				961633821BDE19CC00C4D5E5 /* BaseTabBarController */,
+				961633831BDE19CC00C4D5E5 /* BaseViewController */,
+				961633841BDE19CC00C4D5E5 /* HomeViewController */,
+				961633851BDE19CC00C4D5E5 /* PersonalCenterController */,
+				961633861BDE19CC00C4D5E5 /* ServerViewController */,
+				96E776C11BE3438100161825 /* LoginViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		961633741BDDF2FE00C4D5E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				96E776C91BE3447800161825 /* CommonViews */,
+				96E776C51BE3441100161825 /* HomeViews */,
+				96E776C61BE3441100161825 /* LoginViews */,
+				96E776C71BE3441100161825 /* PersonalCenterViews */,
+				96E776C81BE3441100161825 /* ServerViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		961633821BDE19CC00C4D5E5 /* BaseTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				961633A21BDE1E4500C4D5E5 /* BaseTabBarViewController.h */,
+				961633A31BDE1E4500C4D5E5 /* BaseTabBarViewController.m */,
+			);
+			name = BaseTabBarController;
+			path = BaseTabBarViewController;
+			sourceTree = "<group>";
+		};
+		961633831BDE19CC00C4D5E5 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				961633871BDE1A1C00C4D5E5 /* BaseViewController.h */,
+				961633881BDE1A1C00C4D5E5 /* BaseViewController.m */,
+				9616338D1BDE1AAB00C4D5E5 /* HomeBaseViewController.h */,
+				9616338E1BDE1AAB00C4D5E5 /* HomeBaseViewController.m */,
+				961633901BDE1ACB00C4D5E5 /* ServerBaseViewController.h */,
+				961633911BDE1ACB00C4D5E5 /* ServerBaseViewController.m */,
+				961633991BDE1DBA00C4D5E5 /* PersonalCenterBaseViewController.h */,
+				9616339A1BDE1DBA00C4D5E5 /* PersonalCenterBaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		961633841BDE19CC00C4D5E5 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				961633961BDE1D7800C4D5E5 /* HomeViewController.h */,
+				961633971BDE1D7800C4D5E5 /* HomeViewController.m */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		961633851BDE19CC00C4D5E5 /* PersonalCenterController */ = {
+			isa = PBXGroup;
+			children = (
+				9616339C1BDE1DEC00C4D5E5 /* PersonalCenterViewController.h */,
+				9616339D1BDE1DEC00C4D5E5 /* PersonalCenterViewController.m */,
+			);
+			name = PersonalCenterController;
+			path = PersonalCenterViewController;
+			sourceTree = "<group>";
+		};
+		961633861BDE19CC00C4D5E5 /* ServerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9616339F1BDE1E1900C4D5E5 /* ServerViewController.h */,
+				961633A01BDE1E1900C4D5E5 /* ServerViewController.m */,
+			);
+			path = ServerViewController;
+			sourceTree = "<group>";
+		};
+		96E776C11BE3438100161825 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96E776C21BE343A100161825 /* LoginViewController.h */,
+				96E776C31BE343A100161825 /* LoginViewController.m */,
+			);
+			name = LoginViewController;
+			path = ServerViewController/LoginViewController;
+			sourceTree = "<group>";
+		};
+		96E776C51BE3441100161825 /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
+		96E776C61BE3441100161825 /* LoginViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginViews;
+			sourceTree = "<group>";
+		};
+		96E776C71BE3441100161825 /* PersonalCenterViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PersonalCenterViews;
+			sourceTree = "<group>";
+		};
+		96E776C81BE3441100161825 /* ServerViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServerViews;
+			sourceTree = "<group>";
+		};
+		96E776C91BE3447800161825 /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		9D5EBB657ACB308ADC1CCC17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96C137991BDF016E009CC168 /* libc++.tbd */,
+				96C137971BDF0108009CC168 /* libsqlite3.0.tbd */,
+				96C137941BDF00C5009CC168 /* libz.tbd */,
+				96C137921BDF00B1009CC168 /* SystemConfiguration.framework */,
+				96C137901BDF004F009CC168 /* libsqlite3.tbd */,
+				AAC3D6B2756A26F03738FFD7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B779775ED1F23F3C692C9B0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB522FAC07E8B5BB83A7B8C9 /* Pods.debug.xcconfig */,
+				AC2C8AD239775C24C292AA53 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		961633371BDDDB8C00C4D5E5 /* FinancialCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 961633651BDDDB8D00C4D5E5 /* Build configuration list for PBXNativeTarget "FinancialCloud" */;
+			buildPhases = (
+				375CE80BA0B9FE2459833D3B /* Check Pods Manifest.lock */,
+				961633341BDDDB8C00C4D5E5 /* Sources */,
+				961633351BDDDB8C00C4D5E5 /* Frameworks */,
+				961633361BDDDB8C00C4D5E5 /* Resources */,
+				9F3962515E227B688789868F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinancialCloud;
+			productName = FinancialCloud;
+			productReference = 961633381BDDDB8C00C4D5E5 /* FinancialCloud.app */;
+			productType = "com.apple.product-type.application";
+		};
+		961633501BDDDB8D00C4D5E5 /* FinancialCloudTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 961633681BDDDB8D00C4D5E5 /* Build configuration list for PBXNativeTarget "FinancialCloudTests" */;
+			buildPhases = (
+				9616334D1BDDDB8D00C4D5E5 /* Sources */,
+				9616334E1BDDDB8D00C4D5E5 /* Frameworks */,
+				9616334F1BDDDB8D00C4D5E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				961633531BDDDB8D00C4D5E5 /* PBXTargetDependency */,
+			);
+			name = FinancialCloudTests;
+			productName = FinancialCloudTests;
+			productReference = 961633511BDDDB8D00C4D5E5 /* FinancialCloudTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9616335B1BDDDB8D00C4D5E5 /* FinancialCloudUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9616336B1BDDDB8D00C4D5E5 /* Build configuration list for PBXNativeTarget "FinancialCloudUITests" */;
+			buildPhases = (
+				961633581BDDDB8D00C4D5E5 /* Sources */,
+				961633591BDDDB8D00C4D5E5 /* Frameworks */,
+				9616335A1BDDDB8D00C4D5E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9616335E1BDDDB8D00C4D5E5 /* PBXTargetDependency */,
+			);
+			name = FinancialCloudUITests;
+			productName = FinancialCloudUITests;
+			productReference = 9616335C1BDDDB8D00C4D5E5 /* FinancialCloudUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		961633301BDDDB8C00C4D5E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = SHR;
+				TargetAttributes = {
+					961633371BDDDB8C00C4D5E5 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					961633501BDDDB8D00C4D5E5 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 961633371BDDDB8C00C4D5E5;
+					};
+					9616335B1BDDDB8D00C4D5E5 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 961633371BDDDB8C00C4D5E5;
+					};
+				};
+			};
+			buildConfigurationList = 961633331BDDDB8C00C4D5E5 /* Build configuration list for PBXProject "FinancialCloud" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9616332F1BDDDB8C00C4D5E5;
+			productRefGroup = 961633391BDDDB8C00C4D5E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				961633371BDDDB8C00C4D5E5 /* FinancialCloud */,
+				961633501BDDDB8D00C4D5E5 /* FinancialCloudTests */,
+				9616335B1BDDDB8D00C4D5E5 /* FinancialCloudUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		961633361BDDDB8C00C4D5E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961633481BDDDB8D00C4D5E5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9616334F1BDDDB8D00C4D5E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9616335A1BDDDB8D00C4D5E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		375CE80BA0B9FE2459833D3B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F3962515E227B688789868F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		961633341BDDDB8C00C4D5E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961633921BDE1ACB00C4D5E5 /* ServerBaseViewController.m in Sources */,
+				961633401BDDDB8C00C4D5E5 /* AppDelegate.m in Sources */,
+				96E776C41BE343A100161825 /* LoginViewController.m in Sources */,
+				961633891BDE1A1C00C4D5E5 /* BaseViewController.m in Sources */,
+				96A2D30A1BDF5172001DBE21 /* HRTools.m in Sources */,
+				9616339E1BDE1DEC00C4D5E5 /* PersonalCenterViewController.m in Sources */,
+				9616333D1BDDDB8C00C4D5E5 /* main.m in Sources */,
+				961633A41BDE1E4500C4D5E5 /* BaseTabBarViewController.m in Sources */,
+				9616339B1BDE1DBA00C4D5E5 /* PersonalCenterBaseViewController.m in Sources */,
+				961633811BDE026C00C4D5E5 /* AccountManager.m in Sources */,
+				9616338F1BDE1AAB00C4D5E5 /* HomeBaseViewController.m in Sources */,
+				961633981BDE1D7800C4D5E5 /* HomeViewController.m in Sources */,
+				961633A11BDE1E1900C4D5E5 /* ServerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9616334D1BDDDB8D00C4D5E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961633561BDDDB8D00C4D5E5 /* FinancialCloudTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961633581BDDDB8D00C4D5E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961633611BDDDB8D00C4D5E5 /* FinancialCloudUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		961633531BDDDB8D00C4D5E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 961633371BDDDB8C00C4D5E5 /* FinancialCloud */;
+			targetProxy = 961633521BDDDB8D00C4D5E5 /* PBXContainerItemProxy */;
+		};
+		9616335E1BDDDB8D00C4D5E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 961633371BDDDB8C00C4D5E5 /* FinancialCloud */;
+			targetProxy = 9616335D1BDDDB8D00C4D5E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		961633631BDDDB8D00C4D5E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		961633641BDDDB8D00C4D5E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		961633661BDDDB8D00C4D5E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB522FAC07E8B5BB83A7B8C9 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = FinancialCloud/FinancialCloud.pch;
+				INFOPLIST_FILE = FinancialCloud/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FinancialECloud/lib/WeChatSDK_1.5",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.FinancialCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		961633671BDDDB8D00C4D5E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC2C8AD239775C24C292AA53 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = FinancialCloud/FinancialCloud.pch;
+				INFOPLIST_FILE = FinancialCloud/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FinancialECloud/lib/WeChatSDK_1.5",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.FinancialCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		961633691BDDDB8D00C4D5E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FinancialCloudTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.FinancialCloudTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinancialCloud.app/FinancialCloud";
+			};
+			name = Debug;
+		};
+		9616336A1BDDDB8D00C4D5E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FinancialCloudTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.FinancialCloudTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinancialCloud.app/FinancialCloud";
+			};
+			name = Release;
+		};
+		9616336C1BDDDB8D00C4D5E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FinancialCloudUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.FinancialCloudUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FinancialCloud;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9616336D1BDDDB8D00C4D5E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FinancialCloudUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.FinancialCloudUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FinancialCloud;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		961633331BDDDB8C00C4D5E5 /* Build configuration list for PBXProject "FinancialCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				961633631BDDDB8D00C4D5E5 /* Debug */,
+				961633641BDDDB8D00C4D5E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		961633651BDDDB8D00C4D5E5 /* Build configuration list for PBXNativeTarget "FinancialCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				961633661BDDDB8D00C4D5E5 /* Debug */,
+				961633671BDDDB8D00C4D5E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		961633681BDDDB8D00C4D5E5 /* Build configuration list for PBXNativeTarget "FinancialCloudTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				961633691BDDDB8D00C4D5E5 /* Debug */,
+				9616336A1BDDDB8D00C4D5E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9616336B1BDDDB8D00C4D5E5 /* Build configuration list for PBXNativeTarget "FinancialCloudUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9616336C1BDDDB8D00C4D5E5 /* Debug */,
+				9616336D1BDDDB8D00C4D5E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 961633301BDDDB8C00C4D5E5 /* Project object */;
+}

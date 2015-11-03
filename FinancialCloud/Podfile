@@ -1,0 +1,13 @@
+platform :ios, "7.0"
+
+pod "AFNetworking"        #轻量级的网络管理框架
+pod "MJRefresh"           #tableview下拉刷新上拉加载
+pod "MBProgressHUD"       #屏幕中心旋转提示框.等待.加载...
+pod "MagicalRecord"       #Coredata数据库管理框架
+pod "ReactiveCocoa"       #RAC
+pod "SDWebImage"          #图片自带缓存
+pod "MJExtension"         #字典转模型框架
+
+target :FinancialCloudTests, :exclusive => true do
+  # pod 'Kiwi'
+end
