@@ -13,8 +13,9 @@
 +(instancetype)sharedManager
 {
     static AccountManager *manager = nil;
-    @synchronized(self)
-    {
+
+    @synchronized(self){
+        
         manager = [AccountManager new];
     }
     return manager;
